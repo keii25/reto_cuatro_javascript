@@ -1,10 +1,14 @@
 var scanf = require('scanf');
 
+console.log('---Programa De Calificacion entre 0 y 10---: ')
 console.log('Escriba la nota del Estudiante: ')
 let score = scanf('%d');
 
 switch (true) {
-    case (score > 0 && score <= 3):
+    case (isNaN(score)):
+        console.log('Numero Invalido');
+        break;
+    case (score >= 0 && score <= 3):
         console.log('----> Muy deficiente');
         break;
 
@@ -26,10 +30,10 @@ switch (true) {
 
     case (score > 9 && score <= 10):
         console.log('----> Sobresaliente');
-        break;
-
+        break;        
     default:
-        console.log('Error, fuera de rango.');
+        console.log('Error, fuera de rango');
+        console.log('Debe ingresar nota entre 0 y 10');
         break;
 }
 
