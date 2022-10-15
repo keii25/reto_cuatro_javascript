@@ -1,7 +1,7 @@
 var scanf = require('scanf');
 
-console.log('---Programa De Calificacion entre 0 y 10---: ')
-console.log('Escriba la nota del Estudiante: ')
+console.log('---Programa De Calificacion entre 0 y 10---: ');
+console.log('Escriba la nota del Estudiante: ');
 let score = scanf('%d');
 
 switch (true) {
@@ -38,4 +38,4 @@ switch (true) {
 }
 
 console.log('\n');
-console.log('Programa Finalizado')
+console.log('Programa Finalizado');
